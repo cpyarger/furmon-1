@@ -1,0 +1,107 @@
+Ending of "good" lines....
+
+0x00002160: 20FE455F 44697361 FE456420 202020FE 
+0x00002170: 45005368 757474FE 99670A
+
+line 3
+0x00002130: 3531DF46 2020FE45 50202020 06FE4514     51.F  .EP   ..E.
+0x00002140: 486F7572 73203A20 32373639 20202020     Hours : 2769
+0x00002150: 202020FE 45552020 2020FE45 5A202020        .EU    .EZ
+0x00002160: 20FE455F 44697361 FE456420 202020FE      .E_Disa.Ed    .
+0x00002170: 45005368 757474FE 99670A                E.Shutt..g.
+
+
+
+202020FE 20FE455F 44697361 FE456420 202020FE 45005368 757474FE 99670A
+
+line 4
+5A202020 20FE455F 44697361 FE456420 202020FE 45005368 757474FE 99670A 
+
+
+0x00002A40: 64202020 20FE4500 53687574 74FE9967     d    .E.Shutt..g
+0x00002A50: 0A                                      .
+
+0x00002A20: 36392020 20202020 20FE4555 20202020     69       .EU
+0x00002A30: FE455A20 202020FE 455F4469 7361FE45     .EZ    .E_Disa.E
+0x00002A40: 64202020 20FE4500 53687574 74FE9967     d    .E.Shutt..g
+0x00002A50: 0A                 
+
+
+This end pattern is common:
+20FE455F 44697361 FE456420 202020FE 45005368 757474FE 99670A
+
+grep -P "\x05\x00\xc0" mybinaryfile
+
+grep -P "\x99\x67\x0A" big_furmon_data_sample_2103-03-15
+
+20FE455F 44697361 \xFE\x45\x64\x20\x20\x20\x20\xFE\x45\x00\x53\x68\x75\x74\x74\xFE\x99\x67\x0A
+
+grep -P "\xFE\x45\x64\x20\x20\x20\x20\xFE\x45\x00\x53\x68\x75\x74\x74\xFE\x99\x67\x0A" big_furmon_data_sample_2103-03-15
+
+Line 3 beginning
+0x00000000: 09924550 20202006 FE451453 74617274     ..EP   ..E.Start
+
+
+Line 4 beginning
+0x00000000: 09924550 20202006 FE451452 65736574     ..EP   ..E.Reset
+
+
+This works:
+grep -aiP "\x99\x67$" big_furmon_data_sample_2103-03-15 | most
+
+common beginning:
+
+09924550 20202006 FE4514
+
+grep -aiP "\x09\x92\x45\x50\x20\x20\x20\x06\xFE\x45\x14" big_furmon_data_sample_2103-03-15
+
+This pattern works:
+grep -aiP "^\x09\x92\x45\x50\x20\x20\x20\x06\xFE\x45\x14" big_furmon_data_sample_2103-03-15 | most
+
+grep -aiP "^\x09\x92\x45\x50\x20\x20\x20\x06\xFE\x45\x14" big_furmon_data_sample_2103-03-15 > data.cleaned
+
+to see lengths of line...
+n=1; cat data.cleaned|while read line; do echo -e \\t $(( n ++ )) \\t $(echo $line |wc -c ); done | less
+
+
+<input_file python -c '
+  import sys
+  n = ord(sys.stdin.read(1))      # read length byte
+  s = sys.stdin.read(n)           # read data
+  if len(s) < n: raise ValueError("input file too short")
+  # Process s here
+'
+
+import sys
+fin = open('data.cleaned','rb')
+while fin
+while fin != ""
+ s = fin.read()
+ print len(s)
+
+
+# http://stackoverflow.com/questions/1035340/reading-binary-file-in-python
+f = open("data.cleaned", "rb")
+try:
+    byte = f.read(1)
+    while byte != "":
+        # Do stuff with byte.
+        print byte
+        byte = f.read(1)
+finally:
+    f.close()
+
+# do it with a line...
+f = open("data.cleaned", "rb")
+n = 1
+try:
+    line = f.readline()
+    while line != "":
+        # Do stuff with byte.
+        #print len(line)
+        print "%d  %d" % ((n += 1),len(line))
+        line = f.readline()
+finally:
+    f.close()
+
+

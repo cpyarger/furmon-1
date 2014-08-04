@@ -1,0 +1,500 @@
+   67  cd /home/flint/furmon
+   68  history
+   69  ../bin/fm.py -f ./big_furmon_data_sample_2103-03-15
+   70  bin/fm.py -f sample/big_furmon_data_sample_2103-03-15
+   71  ls
+   72  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+   73  gedit bin/fm.py &
+   74  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+   75  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+   76  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| less
+   77  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+   78  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep "^B" | less
+   79  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep -e "^B" | less
+   80  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 |grep -e "^B" | less
+   81  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 # |grep -e "^B" | less
+   82  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" | less
+   83  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" 
+   84  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+   85  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | tail -5
+   86  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep B
+   87  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "B"
+   88  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line; done 
+   89  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do grep "B" $line; done 
+   90  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "B" $line); done 
+   91  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "B" $line); done 
+   92  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "^B" $line); done 
+   93  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "^B" $line); done 
+   94  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo $line |grep "^B" ); done 
+   95  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B" $line; done 
+   96  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B"; done 
+   97  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; done 
+   98  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; cut -c $line 1-3; done 
+   99  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 1-3; done 
+  100  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5; done 
+  101  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5| strings; done 
+  102  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5 ; done 
+  103  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  104  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done |strings
+  105  cd /home/flint/furmon
+  106  history
+  107  ../bin/fm.py -f ./big_furmon_data_sample_2103-03-15
+  108  bin/fm.py -f sample/big_furmon_data_sample_2103-03-15
+  109  ls
+  110  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  111  gedit bin/fm.py &
+  112  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  113  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  114  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| less
+  115  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  116  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep "^B" | less
+  117  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep -e "^B" | less
+  118  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 |grep -e "^B" | less
+  119  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 # |grep -e "^B" | less
+  120  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" | less
+  121  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" 
+  122  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  123  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | tail -5
+  124  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep B
+  125  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "B"
+  126  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line; done 
+  127  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do grep "B" $line; done 
+  128  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "B" $line); done 
+  129  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "B" $line); done 
+  130  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "^B" $line); done 
+  131  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "^B" $line); done 
+  132  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo $line |grep "^B" ); done 
+  133  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B" $line; done 
+  134  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B"; done 
+  135  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; done 
+  136  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; cut -c $line 1-3; done 
+  137  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 1-3; done 
+  138  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5; done 
+  139  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5| strings; done 
+  140  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5 ; done 
+  141  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  142  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done |strings
+  143  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  144  cd /home/flint/furmon
+  145  history
+  146  ../bin/fm.py -f ./big_furmon_data_sample_2103-03-15
+  147  bin/fm.py -f sample/big_furmon_data_sample_2103-03-15
+  148  ls
+  149  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  150  gedit bin/fm.py &
+  151  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  152  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  153  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| less
+  154  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  155  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep "^B" | less
+  156  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep -e "^B" | less
+  157  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 |grep -e "^B" | less
+  158  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 # |grep -e "^B" | less
+  159  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" | less
+  160  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" 
+  161  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  162  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | tail -5
+  163  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep B
+  164  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "B"
+  165  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line; done 
+  166  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do grep "B" $line; done 
+  167  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "B" $line); done 
+  168  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "B" $line); done 
+  169  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "^B" $line); done 
+  170  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "^B" $line); done 
+  171  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo $line |grep "^B" ); done 
+  172  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B" $line; done 
+  173  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B"; done 
+  174  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; done 
+  175  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; cut -c $line 1-3; done 
+  176  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 1-3; done 
+  177  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5; done 
+  178  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5| strings; done 
+  179  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5 ; done 
+  180  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  181  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done |strings
+  182  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  183  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | tr -d [:cntrl:]
+  184  cd /home/flint/furmon
+  185  history
+  186  ../bin/fm.py -f ./big_furmon_data_sample_2103-03-15
+  187  bin/fm.py -f sample/big_furmon_data_sample_2103-03-15
+  188  ls
+  189  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  190  gedit bin/fm.py &
+  191  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  192  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  193  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| less
+  194  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  195  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep "^B" | less
+  196  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep -e "^B" | less
+  197  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 |grep -e "^B" | less
+  198  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 # |grep -e "^B" | less
+  199  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" | less
+  200  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" 
+  201  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  202  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | tail -5
+  203  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep B
+  204  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "B"
+  205  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line; done 
+  206  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do grep "B" $line; done 
+  207  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "B" $line); done 
+  208  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "B" $line); done 
+  209  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "^B" $line); done 
+  210  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "^B" $line); done 
+  211  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo $line |grep "^B" ); done 
+  212  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B" $line; done 
+  213  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B"; done 
+  214  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; done 
+  215  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; cut -c $line 1-3; done 
+  216  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 1-3; done 
+  217  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5; done 
+  218  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5| strings; done 
+  219  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5 ; done 
+  220  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  221  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done |strings
+  222  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  223  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | tr -d [:cntrl:]
+  224  cd /home/flint/furmon
+  225  history
+  226  ../bin/fm.py -f ./big_furmon_data_sample_2103-03-15
+  227  bin/fm.py -f sample/big_furmon_data_sample_2103-03-15
+  228  ls
+  229  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  230  gedit bin/fm.py &
+  231  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  232  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  233  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| less
+  234  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  235  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep "^B" | less
+  236  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 grep -e "^B" | less
+  237  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 |grep -e "^B" | less
+  238  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 # |grep -e "^B" | less
+  239  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" | less
+  240  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "^B" 
+  241  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | less
+  242  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | tail -5
+  243  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep B
+  244  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | grep "B"
+  245  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line; done 
+  246  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do grep "B" $line; done 
+  247  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "B" $line); done 
+  248  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "B" $line); done 
+  249  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo grep "^B" $line); done 
+  250  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(grep "^B" $line); done 
+  251  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $(echo $line |grep "^B" ); done 
+  252  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B" $line; done 
+  253  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "B"; done 
+  254  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; done 
+  255  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"; cut -c $line 1-3; done 
+  256  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 1-3; done 
+  257  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5; done 
+  258  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5| strings; done 
+  259  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-5 ; done 
+  260  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  261  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done |strings
+  262  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  263  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | tr -d [:cntrl:]
+  264  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4| string ; done 
+  265  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  266  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  267  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  268  ln -s /home/flint/furmon/samples/ .
+  269  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  270  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  271  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  272  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  273  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  274  ln -s /home/flint/furmon/samples/ .
+  275  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  276  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  277  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  278  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  279  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  280  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  281  ln -s /home/flint/furmon/samples/ .
+  282  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  283  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  284  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  285  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  286  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  287  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  288  ln -s /home/flint/furmon/samples/ .
+  289  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  290  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  291  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  292  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  293  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  294  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  295  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  296  ln -s /home/flint/furmon/samples/ .
+  297  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  298  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  299  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  300  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  301  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  302  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  303  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  304  ln -s /home/flint/furmon/samples/ .
+  305  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  306  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  307  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  308  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  309  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  310  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  311  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  312  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  313  ln -s /home/flint/furmon/samples/ .
+  314  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  315  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  316  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  317  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  318  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  319  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  320  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  321  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B" #|cut -c 2-4; done 
+  322  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line #|grep "^B" #|cut -c 2-4; done 
+  323  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line done #|grep "^B" #|cut -c 2-4; done 
+  324  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done #|grep "^B" #|cut -c 2-4; done 
+  325  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B" done #|cut -c 2-4; done 
+  326  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B"; done #|cut -c 2-4; done 
+  327  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B"; done #|cut -c 2-4; done 
+  328  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  329  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  330  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  331  ln -s /home/flint/furmon/samples/ .
+  332  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  333  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  334  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  335  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  336  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  337  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  338  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  339  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B" #|cut -c 2-4; done 
+  340  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line #|grep "^B" #|cut -c 2-4; done 
+  341  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line done #|grep "^B" #|cut -c 2-4; done 
+  342  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done #|grep "^B" #|cut -c 2-4; done 
+  343  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B" done #|cut -c 2-4; done 
+  344  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B"; done #|cut -c 2-4; done 
+  345  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B"; done #|cut -c 2-4; done 
+  346  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "B"; done #|cut -c 2-4; done 
+  347  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  348  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  349  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  350  ln -s /home/flint/furmon/samples/ .
+  351  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  352  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  353  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  354  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  355  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  356  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  357  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  358  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B" #|cut -c 2-4; done 
+  359  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line #|grep "^B" #|cut -c 2-4; done 
+  360  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line done #|grep "^B" #|cut -c 2-4; done 
+  361  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done #|grep "^B" #|cut -c 2-4; done 
+  362  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B" done #|cut -c 2-4; done 
+  363  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B"; done #|cut -c 2-4; done 
+  364  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B"; done #|cut -c 2-4; done 
+  365  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "B"; done #|cut -c 2-4; done 
+  366  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  367  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  368  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  369  ln -s /home/flint/furmon/samples/ .
+  370  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  371  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  372  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  373  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  374  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  375  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  376  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  377  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B" #|cut -c 2-4; done 
+  378  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line #|grep "^B" #|cut -c 2-4; done 
+  379  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line done #|grep "^B" #|cut -c 2-4; done 
+  380  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done #|grep "^B" #|cut -c 2-4; done 
+  381  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B" done #|cut -c 2-4; done 
+  382  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B"; done #|cut -c 2-4; done 
+  383  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B"; done #|cut -c 2-4; done 
+  384  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "B"; done #|cut -c 2-4; done 
+  385  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  386  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  387  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  388  ln -s /home/flint/furmon/samples/ .
+  389  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  390  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  391  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  392  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  393  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  394  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  395  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  396  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B" #|cut -c 2-4; done 
+  397  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line #|grep "^B" #|cut -c 2-4; done 
+  398  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line done #|grep "^B" #|cut -c 2-4; done 
+  399  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done #|grep "^B" #|cut -c 2-4; done 
+  400  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B" done #|cut -c 2-4; done 
+  401  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B"; done #|cut -c 2-4; done 
+  402  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B"; done #|cut -c 2-4; done 
+  403  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "B"; done #|cut -c 2-4; done 
+  404  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done | less
+  405  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  406  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  407  ln -s /home/flint/furmon/samples/ .
+  408  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  409  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4 ; done 
+  410  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4|strings ; done 
+  411  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"|cut -c 2-4; done 
+  412  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  413  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  414  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings #| while read line; do echo $line |grep "^B"#|cut -c 2-4; done 
+  415  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B" #|cut -c 2-4; done 
+  416  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line #|grep "^B" #|cut -c 2-4; done 
+  417  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line done #|grep "^B" #|cut -c 2-4; done 
+  418  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done #|grep "^B" #|cut -c 2-4; done 
+  419  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B" done #|cut -c 2-4; done 
+  420  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line; done |grep "^B"; done #|cut -c 2-4; done 
+  421  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "^B"; done #|cut -c 2-4; done 
+  422  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "B"; done #|cut -c 2-4; done 
+  423  gedit fm.py &
+  424  cd /var/www/furmon/
+  425  lt
+  426  most sub_test 
+  427  cd obe
+  428  lt
+  429  cd //
+  430  cd =
+  431  cd -
+  432  cd ..
+  433  most sub_test 
+  434  cd furmon/bin/
+  435  gedit fm.py
+  436  exit
+  437  banana
+  438  gedit 
+  439  gedit 10.0.1.45 &
+  440  gedit bin/fm.py &
+  441  gedit ~/flint/bin/fm.py &
+  442  gedit ~/flint/furmon/bin/fm.py &
+  443  pwd
+  444  cd furmon/
+  445  gedit bin/fm.py &
+  446  exit
+  447  ls -alt | grep "2013-05-17"
+  448  cd bom
+  449  cd bin
+  450  ls -alt | grep "2013-05-17"
+  451  ls -alt | grep pk
+  452  gedit pkhlp.sh
+  453  gedit pkhlp.sh &
+  454  chmod +x pkhlp.sh
+  455  ./pkhlp.sh 
+  456  lt
+  457  chmod +x vbtp2.sh 
+  458  ./vbtp2.sh
+  459  ./vbtp2.sh help
+  460  ./vbtp2.sh 
+  461  cd ..
+  462  gedit bin/fm.py
+  463  bin/fm.py 
+  464  bin/fm.py -h
+  465  history 
+  466  history > history_$(date +%F)_
+  467  history |grep fm.py 
+  468  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 | strings | while read line; do echo $line |grep "B"; done #|cut -c 2-4; done 
+  469  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15 #| strings | while read line; do echo $line |grep "B"; done #|cut -c 2-4; done 
+  470  bin/fm.py
+  471  bin/fm.py -h
+  472  [ef
+  473  pwd
+  474  mv bin/fm.py bin/obe/fm_optup_$(date +%F)_
+  475  cd bin
+  476  lt
+  477  cd obe
+  478  lt
+  479  ls
+  480  ls -alt | less
+  481  cd ..
+  482  lt
+  483  bin/fm.py -h
+  484  cd ..
+  485  bin/fm.py -h
+  486  chmod +x bin/fm.py
+  487  bin/fm.py -h
+  488  EXIT
+  489  exit
+  490  pwd
+  491  history
+  492  history | grep fm.ph
+  493  history | grep fm.py
+  494  bin/fm.py -f samples/big_furmon_data_sample_2103-03-15
+  495  exit
+  496  cd furmon/
+  497  gedit bin/fm.py &
+  498  dpkg -l | grep -i overlay
+  499  exit
+  500  find . | grep "sh$"
+  501  find . | grep "sh$" |xargs ls -alt
+  502  less test3.sh
+  503  cd /home/flint/furmon/bin
+  504  find . | grep "sh$" |xargs ls -alt
+  505  gedit outpcp4.sh &
+  506  gedit vbtp2.sh
+  507  la | grep outpcp
+  508  ls -alt | grep outpcp
+  509  gedit outpcp.sh
+  510  cd ..
+  511  bin/outpcp.sh "test 1,1" "Purging" "test 1,2" "Hours : 2808" "test 1,3" "Resets: 102" "test 1,4" "Starts: 12521"
+  512  lt
+  513  firefox outpcp.html 
+  514  ls -alt | grep out
+  515  bin/outpcp4.sh
+  516  ls -alt | grep html
+  517  firefox in.html
+  518  dpkg -l | grep -i komposer
+  519  apt-cache search komposer
+  520  apt-get update
+  521  apt-cache search kompozer
+  522  apt-get install kompozer
+  523  komposer in.html
+  524  kompozer in.html &
+  525  cp in.html obe/$(date +%F)_in.html 
+  526  mkdir obe
+  527  cp in.html obe/$(date +%F)_in.html 
+  528  kompozer in.html &
+  529  lt
+  530  cp in_2013-06-13.html in.html 
+  531  firefox in.html 
+  532  pwd
+  533  find . | grep outpcp
+  534  cp bin/outpcp.sh bin/obe/$(date +%F)_outpcp.sh
+  535  cp in.html bin/outpcp.sh
+  536  bin/outpcp.sh
+  537  pwd
+  538  diff in.html out.html
+  539  chmod +x bin/outpcp5.bin
+  540  chmod +x bin/outpcp5.sh
+  541  bin/outpcp5.sh
+  542  firefox in.html
+  543  cmp in.html out.html
+  544  diff in.html out.html
+  545  firefox out.html
+  546  kimpozer out.html
+  547  kompozer out.html
+  548  kompozer in.html
+  549  man kompozer
+  550  kompozer
+  551  cp in.html obe/$(date +%F)1_in.html 
+  552  komposer
+  553  kompozer
+  554  gedit in.html 
+  555  firefox in.html 
+  556  cp in.html out.html 
+  557  firefox out.html 
+  558  cp obe/2013-06-13_in.html in.html
+  559  cp in.html out.html
+  560  firefox out.html
+  561  cp out.html /var/www/furmon/out.html
+  562  gedit /var/www/furmon/out.html
+  563  firefox out.html
+  564  firefox http://10.0.1.45/furmon/out.html
+  565  history | grep fm
+  566  history > history_$(date +%F)_

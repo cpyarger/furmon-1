@@ -1,0 +1,393 @@
+starting bin/fm.py at 2013-04-01 12:13:47 
+Using serial data from /dev/ttyUSB0 at 9600 bits per second, with a 6 second time out factor
+Press Ctrl+C for interrupt
+At 2013-04-01 12:13:55, after 7 seconds the length of the data is: 277
+No Alarm  no reason 		
+Purging      			
+		
+		
+Starts: 13033       		
+		
+Stack Temp: 302		
+		
+tada
+At 2013-04-01 12:14:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+Resets: 107       		
+		
+		
+Stack Temp: 286		
+		
+tada
+At 2013-04-01 12:14:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+		
+		
+		
+Stack Temp: 271		
+		
+tada
+At 2013-04-01 12:14:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+		
+Starts: 13033       		
+		
+Stack Temp: 256		
+		
+tada
+At 2013-04-01 12:14:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+Resets: 107       		
+		
+		
+Stack Temp: 241		
+		
+tada
+At 2013-04-01 12:15:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+		
+Starts: 13033       		
+		
+Stack Temp: 226		
+Last T-call at 			
+tada
+At 2013-04-01 12:15:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+Resets: 107       		
+Starts: 13033       		
+System Temp: ßF 		
+Stack Temp: 211		
+Last T-call at 			
+tada
+At 2013-04-01 12:15:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+		
+		
+		
+Stack Temp: 196		
+Last T-call at 			
+tada
+At 2013-04-01 12:15:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+		
+Starts: 13033       		
+		
+Stack Temp: 181		
+Last T-call at 			
+tada
+At 2013-04-01 12:16:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+Resets: 107       		
+		
+		
+Stack Temp: 166		
+Last T-call at 			
+tada
+At 2013-04-01 12:16:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+		
+		
+		
+Stack Temp: 151		
+Last T-call at 			
+tada
+At 2013-04-01 12:16:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+		
+Starts: 13033       		
+		
+Stack Temp: 136		
+Last T-call at 			
+tada
+At 2013-04-01 12:16:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+Resets: 107       		
+		
+System Temp: DF 		
+Stack Temp: 121		
+Last T-call at 			
+tada
+At 2013-04-01 12:17:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+		
+Starts: 13033       		
+		
+Stack Temp: 106		
+Last T-call at 			
+tada
+At 2013-04-01 12:17:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+Resets: 107       		
+Starts: 13033       		
+		
+Stack Temp: 102		
+Last T-call at 			
+tada
+At 2013-04-01 12:17:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+		
+		
+		
+		
+Last T-call at 			
+tada
+At 2013-04-01 12:17:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+		
+Starts: 13033       		
+		
+		
+		
+tada
+At 2013-04-01 12:18:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+Resets: 107       		
+		
+		
+		
+		
+tada
+At 2013-04-01 12:18:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+Hours : 2900       		
+		
+		
+		
+		
+		
+tada
+At 2013-04-01 12:18:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+		
+Starts: 13033       		
+		
+		
+		
+tada
+At 2013-04-01 12:18:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+Purging      			
+		
+Resets: 107       		
+		
+		
+		
+		
+tada
+At 2013-04-01 12:19:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+		
+		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:19:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+		
+		
+Starts: 13033       		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:19:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+Resets: 107       		
+		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:19:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+		
+Starts: 13033       		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:20:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+		
+Resets: 107       		
+Starts: 13033       		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:20:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+Resets: 107       		
+		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:20:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+		
+Starts: 13033       		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:20:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+		
+Resets: 107       		
+Starts: 13033       		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:21:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+Resets: 107       		
+		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:21:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+		
+Starts: 13033       		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:21:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+		
+Resets: 107       		
+Starts: 13033       		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:21:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+Resets: 107       		
+		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:22:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+		
+Starts: 13033       		
+System Temp: Fee		
+Stack Temp: E0		
+		
+tada
+At 2013-04-01 12:22:25, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+		
+Resets: 107       		
+		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:22:40, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+		
+		
+System Temp: Fee		
+		
+		
+tada
+At 2013-04-01 12:22:55, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+		
+		
+Starts: 13033       		
+		
+		
+Last T-call at 			
+tada
+At 2013-04-01 12:23:10, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+		
+Resets: 107       		
+		
+		
+		
+Last T-call at 			
+tada
+At 2013-04-01 12:23:26, after 11 seconds the length of the data is: 828
+No Alarm  no reason 		
+		
+Hours : 2900       		
+		
+Starts: 13033       		
+		
+		
+Last T-call at 			
+tada

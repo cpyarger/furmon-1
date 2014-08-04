@@ -1,0 +1,500 @@
+  108  cat start.html |sed -r "s|test .,. |  |g" | less -NS  #> outpcp.html;cp outpcp.html start.html
+  109  cp test.html start.html 
+  110  less start.html 
+  111  cp test.html start.html 
+  112  bin/outpcp.sh "test 2,3" "dance"
+  113  cp test.html start.html 
+  114  cp start.html outpcp.html
+  115  bin/outpcp.sh "test 2,3" "dance"
+  116  bin/outpcp.sh
+  117  bin/outpcp.sh | less 
+  118  bin/outpcp.sh "test 2,3" "dance"
+  119  bin/outpcp.sh "test 2,3" "dance" | less
+  120  cat start.html |sed -r "s|test .,.|  |g" | #> outpcp.html;cp outpcp.html start.html
+  121  cat start.html |sed -r "s|test .,.|  |g" | less #> outpcp.html;cp outpcp.html start.html
+  122  bin/outpcp.sh "test 2,3" "dance" | less
+  123  bin/outpcp.sh "test 2,3" "dance"
+  124  bin/outpcp.sh "test 1,3" "dance"
+  125  bin/outpcp.sh "test 4,3" "dance"
+  126  bin/outpcp.sh "test 4,3" "dance" "test 1,3" "lawyer"
+  127  bin/outpcp.sh "test 4,3" "dance" "test 1,3" "lawyer" "banana" "chris"
+  128  bin/outpcp.sh "test 4,3" "dance" "test 1,3" "lawyer" "test 2,3" "chris"
+  129  bin/outpcp.sh "test 4,3" "dance" "test 1,3" "lawyer" "test 2,3" "chris" "test 1,1" "eva" 
+  130  bin/outpcp.sh /"test 4,3" "dance" "test 1,3" "lawyer" "test 2,3" "chris" "test 1,1" "eva" 
+  131  bin/outpcp.sh "test 4,3" "dance" "test 1,3" "lawyer" "test 2,3" "chris" "test 1,1" "eva" 
+  132  bin/outpcp.sh "test 1,1" "dance" "test 1,2" "lawyer" "test 1,3" "chris"
+  133  bin/outpcp.sh "test 1,1" "dance" "test 1,2" "lawyer" "test 1,3" "chris" "test 2,1" "Paul"
+  134  bin/outpcp.sh "test 1,1" "dance" "test 1,2" "lawyer" "test 1,3" "chris" "test 1,4" "Paul"
+  135  ls -alt | grep data
+  136  cd ~furmon
+  137  history | grep of9
+  138  history | grep of5
+  139  cd /home/flint/furmon/
+  140  ls
+  141  bin/of9.py furmon.data 
+  142  cd -
+  143  bin/outpcp.sh "test 1,1" "Purging" "test 1,2" "Hours : 2808" "test 1,3" "Resets: 102" "test 1,4" "Starts: 12521"
+  144  minicom
+  145  minicom -s
+  146  bin/cfl0.py furmon.data | less
+  147  bin/stemp1.py 
+  148  bin/stemp1.py furmon.data 
+  149  bin/stemp2.py furmon.data 
+  150  gedit bin/stemp1.py 
+  151  bin/stemp2.py furmon.data 
+  152  bin/ssr2.py 
+  153  bin/ssr2.py furmon.data 
+  154  gedit bin/ssr2.py 
+  155  chmod +x bin/tc.py 
+  156  bin/tc.py furmon.data 
+  157  bin/cfl4.py furmon.data 
+  158  bin/cfl.py furmon.data 
+  159  bin/cfl0.py furmon.data 
+  160  bin/cfl0.py /home/flint/furmon/furmon.data_in_flame_out_alarm_2013-03-14
+  161  bin/cfl0.py /home/flint/furmon/samples/furmon.data_in_flame_out_alarm_2013-03-14
+  162  chmod +x bin/of3.py 
+  163  bin/of3.py 
+  164  ls bin/of*
+  165  bin/of1.py 
+  166  chmod +x bin/of4.py 
+  167  bin/of4.py 
+  168  gedit bin/of1.py 
+  169  bin/of1.py
+  170  gedit bin/of2.py 
+  171  gedit bin/of3.py 
+  172  gedit bin/of4.py 
+  173  class furmon:
+  174  def alarm(self):
+  175  tme( "Alarm-type Date-time")
+  176  def state(self):
+  177  tme( "State-type State-counter Date-time")
+  178  def stacktmp(self):
+  179  tme( "stacktmp Date-time")
+  180  def flamesns(self):
+  181  tme( "flamesns Date-time")
+  182  def ophours(self):
+  183  tme( "Hours-operating Date-time")
+  184  def thstcall(self):
+  185  tme( "Thermostat-call Date-time")
+  186  def ignind(self):
+  187  tme( "Ignition-indicator Ignition-count Date-time")
+  188  def starts(self):
+  189  tme( "Number-starts Date-time")
+  190  def blower(self):
+  191  tme( "Blower-value Date-time")
+  192  def button1(self):
+  193  tme( "Button1-pressed Date-time")
+  194  def button2(self):
+  195  tme( "Button2-pressed Date-time")
+  196  def printme( str ):
+  197  bin/of4.py 
+  198  chmod +x bin/of5.py 
+  199  bin/of5.py 
+  200  gedit bin/of4.py 
+  201  bin/of5.py 
+  202  bin/of5.py \
+  203  bin/of5.py 
+  204  gedit bin/of5.py 
+  205  chmod +x bin/of6.py 
+  206  bin/of6.py 
+  207  bin/rsr2.py furmon.data 
+  208  gedit bin/rsr2.py 
+  209  bin/rsr2.py furmon.data 
+  210  chmod +x bin/of7.py 
+  211  bin/of6.py 
+  212  bin/of7.py 
+  213  ls -alt bin/*.py
+  214  bin/purge1.py furmon.data 
+  215  gedit bin/purge1.py
+  216  bin/of7.py 
+  217  bin/ssr2.py
+  218  bin/ssr2.py furmon.data 
+  219  gedit bin/ssr2.py 
+  220  bin/of7.py 
+  221  bin/cfl1.py furmon.data 
+  222  bin/of7.py 
+  223  bin/hsr2.py furmon.data 
+  224  gedit bin/hsr2.py
+  225  bin/of7.py 
+  226  bin/cfl1.py furmon.data 
+  227  bin/cfl1.py furmon.data | less
+  228  bin/cfl1.py furmon.data | sort | less
+  229  bin/of7.py 
+  230  bin/cfl.py furmon.data
+  231  bin/cfl0.py furmon.data
+  232  bin/temp1.py furmon.data
+  233  gedit bin/temp1.py
+  234  bin/of7.py 
+  235  bin/cfl0.py furmon.data
+  236  bin/cfl0.py furmon.data | less
+  237  chmod +x bin/stemp1.py
+  238  bin/stemp1.py 
+  239  bin/stemp1.py furmon.data 
+  240  bin/stemp1.py 
+  241  bin/stemp1.py furmon.data 
+  242  bin/of7.py 
+  243  chmod +x bin/stemp2.py
+  244  ./bin/stemp2.py
+  245  ./bin/stemp2.py furmon.data 
+  246  ./bin/stemp1.py furmon.data 
+  247  ./bin/stemp2.py furmon.data 
+  248  ./bin/stemp1.py furmon.data 
+  249  ./bin/stemp2.py furmon.data 
+  250  ./bin/stemp1.py furmon.data 
+  251  bin/of7.py 
+  252  ./bin/stemp1.py furmon.data 
+  253  bin/of7.py 
+  254  gedit bin/of6.py 
+  255  gedit bin/ofy.py 
+  256  gedit bin/of7.py 
+  257  gedit bin/of6.py 
+  258  bin/of7.py 
+  259  chmod +x bin/of8.py 
+  260  bin/of8.py 
+  261  crontab -l
+  262  gedit /var/www/bin/gtsp.py
+  263  pwd
+  264  cd /var/www/itemp
+  265  ls
+  266  vi itemp.log 
+  267  pwd
+  268  ls
+  269  cd ..
+  270  ls
+  271  rm temp.lo
+  272  less temp.log 
+  273  bin/pbug-debug.sh 
+  274  cd -
+  275  cd ~flint/
+  276  ls -alt | grep screen
+  277  cp pds.screen ~flint/bin/.
+  278  cp pds.screen .screen
+  279  screen
+  280  bin/gtsp.py 
+  281  reboot
+  282  minicom
+  283  lsof /dev/ttyUSB0
+  284  kill -9 28971
+  285  minicom
+  286  python
+  287  bin/gtsp.py 
+  288  vi /var/www/otemp/otemp.log 
+  289  vi /var/www/itemp/itemp.log 
+  290  pwd
+  291  cd /var/www
+  292  ls
+  293  cd htest/
+  294  ls
+  295  cd logs
+  296  ls
+  297  less htemp.log 
+  298  cd ../../itemp/
+  299  ls
+  300  less itemp.log 
+  301  cd ../
+  302  bin/mtsp.sh cit
+  303  bin/mtsp.sh otemp
+  304  otemp/otemp.sh~ 
+  305  otemp/otemp.sh
+  306  itemp/itemp.sh
+  307  bin/itemp.sh 
+  308  bin/otemp.sh 
+  309  ls
+  310  bin/gfd.py 
+  311  gedit bin/gfd.py 
+  312  gedit bin/gfd.py &
+  313  less furmon.data 
+  314  bin/gfd.py 
+  315  bin/of9.py furmon.data 
+  316  cp bin/gfd.py bin/obe/$(date +%F)_gfd.py
+  317  gedit bin/of9.py
+  318  bin/gfd.py 
+  319  less furmon.data 
+  320  bin/gfd.py 
+  321  bin/gfd1.py 
+  322  chmod +x bin/gfd1.py
+  323  bin/gfd1.py 
+  324  minicom -s 
+  325  dmesg | grep -i usb
+  326  minicom -s 
+  327  python
+  328  pwd
+  329  mv mfurmon.py bin/gtsp.py
+  330  gedit bin/gtsp.py
+  331  gedit bin/gtsp.py &
+  332  gedit bin/mtsp.sh
+  333  chmod +x bin/gtsp.py
+  334  bin/gtsp.py 
+  335  ls
+  336  less mstp.data 
+  337  bin/gtsp.py 
+  338  ls
+  339  less mstp.data 
+  340  rm mstp.data
+  341  bin/gtsp.py 
+  342  less mstp.data 
+  343  bin/gtsp.py 
+  344  less mstp.data 
+  345  rm mstp.data
+  346  bin/gtsp.py 
+  347  less mstp.data 
+  348  pwd
+  349  cd /var/www
+  350  ls -alt | grep temp.log
+  351  rm varwwwtemp.log 
+  352  ls -alt | grep temp.log
+  353  man tr
+  354  bin/mtsp.sh itemp
+  355  grep "Out" /var/www/temp.log 
+  356  grep "Steam" /var/www/temp.log 
+  357  grep "Hot" /var/www/temp.log 
+  358  less /var/www/temp.log
+  359  grep "Hot" /var/www/temp.log 
+  360  grep "Water" /var/www/temp.log 
+  361  grep "Pipe" /var/www/temp.log 
+  362  /var/www/bin/otemp.sh
+  363  grep -i "Out" /var/www/temp.log 
+  364  crontab -e
+  365  /var/www/bin/otemp.sh
+  366  cat /var/www/bin/otemp.sh
+  367  tlog="/var/www/otemp/logs/otemp.log";tail -4 $outt
+  368  outt="/var/www/otemp/otemp.data";tail -4 $outt
+  369  bin/cfl1.py furmon.data 
+  370  bin/cfl2.py furmon.data 
+  371  bin/cfl3.py furmon.data 
+  372  bin/cfl4.py furmon.data 
+  373  cp bin/cfl0.py bin/cfl4.py 
+  374  gedit bin/cfl4.py 
+  375  chmod +x bin/cfl4.py
+  376  bin/cfl4.py furmon.data 
+  377  bin/cfl2.py furmon.data 
+  378  cp bin/cfl2.py bin/cfl4.py 
+  379  bin/cfl4.py furmon.data 
+  380  cd samples/
+  381  ls
+  382  cd ..
+  383  pwd
+  384  cd bin
+  385  ls
+  386  gedit fdbg.screen &
+  387  top
+  388  man sed
+  389  gedit gfd.py
+  390  minicom
+  391  cd /var/www
+  392  grep watch /home/flint/bin/pds.screen 
+  393  watch "echo $(date +%F);echo $(date +%s); tail -20 /var/www/temp.log"
+  394  pwd
+  395  gedit ~/.screenrc
+  396  ls -alt ~/.screenrc
+  397  gedit bin/fdbg.sh
+  398  bin/fdbg.sh
+  399  cd /var/www
+  400  ls
+  401  exit
+  402  pwd
+  403  cd /var/www
+  404  ls
+  405  cd itemp/
+  406  ls
+  407  less itemp.data
+  408  ls
+  409  ls -alt
+  410  less itemp.data
+  411  ls
+  412  less itemp.log
+  413  pwd
+  414  cd ../furmon/
+  415  ls
+  416  cd /var/www
+  417  pwd
+  418  cd furmon/
+  419  ls
+  420  ln -s Pellergy_Control_For_Furmon_Site.html index.html
+  421  mv index.html obe/$(date +%F)_index.html 
+  422  ln -s Pellergy_Control_For_Furmon_Site.html index.html
+  423  cd ~flint/bin
+  424  ls
+  425  less fdbg.sh
+  426  cd /var/www/furmon/
+  427  ls
+  428  cd -
+  429  ls
+  430  ls -alt | grep screen
+  431  gedit ibmfr1.py
+  432  ls -alt | grep ibm
+  433  chmod +x ibmfr1.py
+  434  ./ibmfr1.py 
+  435  ./ibmfr1.py --help
+  436  ./ibmfr1.py -p guido
+  437  ls
+  438  ld
+  439  dt
+  440  lt
+  441  ls f*
+  442  ls r*
+  443  pwd
+  444  cd ../furmon/bin/
+  445  chmod +x rhcmd.py
+  446  ./rhcmd.py 
+  447  ./rhcmd.py --version
+  448  pwd
+  449  ls
+  450  mv /home/flint/bin/ibmfr* .
+  451  chmod +x ibm*
+  452  ./ibmfr1.py
+  453  ipython
+  454  apt-get install ipython
+  455  ipython
+  456  python
+  457  ldir
+  458  pwd
+  459  cd ../furmon/bin
+  460  chmod +x ibmfr2.py
+  461  ./ibmfr2.py
+  462  ./ibmfr1.py
+  463  pwd
+  464  exit
+  465  cd bin
+  466  nautilus . &
+  467  gedit sc1.py
+  468  which python
+  469  chmod +x sc1.py 
+  470  echo > spam.txt << end
+  471  cat spam
+  472  ./sc1.py spam.txt 
+  473  cat spam.txt 
+  474  ls -alt spam.txt 
+  475  ./sc1.py spam.txt 
+  476  ls | grep pack
+  477  history |
+  478  history | grep echo
+  479  echo > spam.txt << end
+  480  cat spam.txt 
+  481  echo > spam.txt << end
+  482  cat spam.txt 
+  483  echo << end  spam.txt
+  484  cat spam.txt 
+  485  cat << 'end" spam.txt
+  486  the quick brown fox jumped over the lazy dog
+  487  end
+  488  cat << 'end" spam.txt
+  489  the quick brown fox jumped over the lazy dog
+  490  end
+  491  cat << 'end' spam.txt
+  492  cat spam.txt 
+  493  cat << end > spam.txt
+  494  cat spam.txt 
+  495  ./sc1.py spam.txt 
+  496  ld
+  497  ly
+  498  cat fdbg.sh
+  499  ./fdbg.sh
+  500  gedit bin/fm.py &
+  501  bin/fm.py
+  502  bin/fm.py -h
+  503  bin/fm.py -?
+  504  bin/fm.py --query
+  505  bin/fm.py 
+  506  bin/fm.py -h
+  507  bin/fm.py -?
+  508* bin/fm.py -p 
+  509  bin/fm.py -f test
+  510  gedit bin/gfd.py
+  511  bin/fm.py -f furmon.data
+  512  nautilus bin &
+  513  bin/stemp1.py furmon.data
+  514  bin/fm.py -f furmon.data
+  515  bin/ophours.py furmon.data
+  516  bin/hrs.py furmon.data
+  517  ls -alt bin/h*
+  518  bin/hsr1.py 
+  519  bin/hsr1.py furmon.data
+  520  bin/hsr1.py 
+  521  bin/fm.py -f furmon.data
+  522  bin/fm.py
+  523  bin/fm.py -h
+  524  bin/fm.py -?
+  525  bin/fm.py -f furmon.data
+  526* bin/fm.py -
+  527  bin/fm.py -f furmon.data
+  528  bin/fm.py -f banana
+  529  bin/fm.py -f furmon.data
+  530  bin/fm.py -f banana
+  531  bin/fm.py -f furmon.data
+  532  bin/fm.py -f banana
+  533  bin/fm.py -f furmon.data
+  534  bin/fm.py -f banana
+  535  bin/fm.py -f furmon.data
+  536  bin/fm.py -f banana
+  537  bin/fm.py -f furmon.data
+  538  bin/fm.py -f banana
+  539  bin/fm.py -f furmon.data
+  540  bin/fm.py -f 
+  541  bin/fm.py -f furmon.data
+  542  bin/fm.py -h
+  543  bin/fm.py -f furmon.data
+  544  bin/fm.py -h
+  545  cp bin/fm.py bin/obe/$(date +%F)_fm.py
+  546  bin/fm.py -h
+  547  bin/fm.py -f furmon.data
+  548  bin/fm.py -h
+  549  bin/fm.py -f furmon.data
+  550  bin/fm.py -h
+  551  bin/fm.py -f furmon.data
+  552  clear
+  553  bin/fm.py -f furmon.data
+  554  bin/fm.py -h
+  555  clear
+  556  bin/fm.py -h
+  557  bin/fm.py 
+  558  bin/fm.py -h
+  559  bin/fm.py 
+  560  bin/fm.py -f furmon.data
+  561  bin/fm.py -p guido
+  562  bin/fm.py -p guido -f furmon.data
+  563  bin/fm.py -p guido
+  564  bin/fm.py -p guido -f furmon.data
+  565  bin/fm.py  -f furmon.data
+  566  bin/fm.py  
+  567  bin/fm.py  -h
+  568  bin/fm.py  --version
+  569  bin/fm.py  -h
+  570  bin/fm.py 
+  571  bin/fm.py -h
+  572  bin/fm.py -?
+  573  bin/fm.py -f
+  574  bin/fm.py -f banana
+  575  bin/fm.py -?
+  576  zip furmon.code.zip bin/fm.py furmon.data
+  577  ls *.zip
+  578  scp furmon.code.zip flint@mail.flint.com:./.
+  579  bin/fm.py -f banana
+  580  bin/fm.py -f furmon.data
+  581  bin/fm.py -h
+  582  bin/fm.py -a
+  583  bin/fm.py -as
+  584  bin/fm.py -s
+  585  bin/fm.py -h
+  586  bin/fm.py -s
+  587  p "/dev/ttyUSB0"
+  588  bin/fm.py -p "/dev/ttyUSB0"
+  589  bin/fm.py -p "/dev/ttyUSB1"
+  590  bin/fm.py -f furmon.data
+  591  bin/fm.py -p "/dev/ttyUSB1"
+  592  bin/fm.py -p "/dev/ttyUSB1" -h
+  593  bin/fm.py -p "/dev/ttyUSB1" -b "4800"
+  594  bin/fm.py -p "/dev/ttyUSB1" -h
+  595  bin/fm.py -?
+  596  bin/fm.py -s
+  597  bin/fm.py -h
+  598  bin/fm.py -s
+  599  bin/fm.py -f furmon.data
+  600  bin/fm.py -s
+  601  bin/fm.py -f furmon.data
+  602  bin/fm.py -s
+  603  bin/fm.py -f furmon.data
+  604  bin/fm.py -s
+  605  bin/gfd.py
+  606  history
+  607  history > history_$(date +%F)

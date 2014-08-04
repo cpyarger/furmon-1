@@ -1,0 +1,25 @@
+import time
+class now:
+     def __init__(self):
+             self.t=time.time()
+             self.year, \
+             self.month, \
+             self.day, \
+             self.hour, \
+             self.minute, \
+             self.second, \
+             self.dow, \
+             self.doy, \
+	     self.dst = time.localtime(self.t)	
+
+
+http://docbox.flint.com:8081/furmon
+parse furmon line...
+head -1 furmon.data |sed 's/\x45\x0f/\n/g' | sed 's/\xfeE/|/g'
+
+head -1 furmon.data |sed 's/\x45\x0f/\n/g' | sed 's/\xfeE/|/g'
+
+head -1 furmon.data |sed 's/\x45\x0f/\n/g' | sed 's/\xfeE/|/g' | sed 's/\x02/ /g' | sed 's/\xdfF/ /g' | sed 's/\x14/ /g' | sed 's/\x12/ /g' | sed 's/\x81/    | /g'  | sed 's/\xe5/    | /g' | sed 's/\xc2/    | /g' | sed 's/\xfe/    | /g'  #| head -4 | tail -1 |hexdump -C
+
+
+

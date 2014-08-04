@@ -1,0 +1,140 @@
+# $Id: screenrc,v 1.15 2003/10/08 11:39:03 zal Exp $
+#
+# /etc/screenrc
+#
+#   This is the flint screenrc.
+#
+#   You can use this file to change the default behavior of screen system wide
+#   or copy it to ~/.screenrc and use it as a starting point for your own
+#   settings.
+#
+#   Commands in this file are used to set options, bind screen functions to
+#   keys, redefine terminal capabilities, and to automatically establish one or
+#   more windows at the beginning of your screen session.
+#
+#   This is not a comprehensive list of options, look at the screen manual for
+#   details on everything that you can put in this file.
+#
+
+# ------------------------------------------------------------------------------
+# SCREEN SETTINGS
+# ------------------------------------------------------------------------------
+
+#startup_message off
+#nethack on
+
+#defflow on # will force screen to process ^S/^Q
+deflogin on
+#autodetach off
+
+# turn visual bell on
+vbell on
+vbell_msg "   Wuff  ----  Wuff!!  "
+
+# define a bigger scrollback, default is 100 lines
+defscrollback 1024
+
+# ------------------------------------------------------------------------------
+# SCREEN KEYBINDINGS
+# ------------------------------------------------------------------------------
+
+# Remove some stupid / dangerous key bindings
+bind ^k
+#bind L
+bind ^\
+# Make them better
+bind \\ quit
+bind K kill
+bind I login on
+bind O login off
+bind } history
+
+# An example of a "screen scraper" which will launch urlview on the current
+# screen window
+#
+#bind ^B eval "hardcopy_append off" "hardcopy -h $HOME/.screen-urlview" "screen urlview $HOME/.screen-urlview"
+
+# ------------------------------------------------------------------------------
+# TERMINAL SETTINGS
+# ------------------------------------------------------------------------------
+
+# The vt100 description does not mention "dl". *sigh*
+termcapinfo vt100 dl=5\E[M
+
+# turn sending of screen messages to hardstatus off
+hardstatus off
+# Set the hardstatus prop on gui terms to set the titlebar/icon title
+termcapinfo xterm*|rxvt*|kterm*|Eterm* hs:ts=\E]0;:fs=\007:ds=\E]0;\007
+# use this for the hard status string
+hardstatus string "%h%? users: %u%?"
+
+# An alternative hardstatus to display a bar at the bottom listing the
+# windownames and highlighting the current windowname in blue. (This is only
+# enabled if there is no hardstatus setting for your terminal)
+#
+#hardstatus lastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+
+# set these terminals up to be 'optimal' instead of vt100
+termcapinfo xterm*|linux*|rxvt*|Eterm* OP
+
+# Change the xterm initialization string from is2=\E[!p\E[?3;4l\E[4l\E>
+# (This fixes the "Aborted because of window size change" konsole symptoms found
+#  in bug #134198)
+termcapinfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+
+# To get screen to add lines to xterm's scrollback buffer, uncomment the
+# following termcapinfo line which tells xterm to use the normal screen buffer
+# (which has scrollback), not the alternate screen buffer.
+#
+#termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+# ------------------------------------------------------------------------------
+# STARTUP SCREENS
+# ------------------------------------------------------------------------------
+
+# Example of automatically running some programs in windows on screen startup.
+#
+#   The following will open top in the first window, an ssh session to monkey
+#   in the next window, and then open mutt and tail in windows 8 and 9
+#   respectively.
+#
+# screen top
+# screen -t monkey ssh monkey
+# screen -t mail 8 mutt
+# screen -t daemon 9 tail -f /var/log/daemon.log
+#
+# pflint 
+# Thu Feb  9 23:24:52 EST 2006
+# added so pine will live...
+bindkey -k k; stuff ";a"
+bindkey -k F1 stuff "as"
+# bindkey -k F2 stuff ";cn"
+# the new spam key...
+bindkey -k F3 stuff "d"
+# new version key...
+bindkey -k F9 stuff "obe/$(date +%F)_"
+bindkey -k F2 stuff "obe/$(date +%F)_"
+# 
+# Sat Mar  4 22:25:07 EST 2006
+#
+# screen top
+# screen -t monkey ssh monkey
+screen -t python 1 python
+screen -t ipython 2 ipython
+screen -t test3 3
+screen -t test4 4
+screen -t test5 5
+# screen -t itemp  2  watch 'echo $(date +%s);head -20 /var/www/itemp/itemp.log'
+# screen -t otemp  3  watch 'echo $(date +%s);head -20 /var/www/otemp/otemp.log'
+# screen -t itemp  4  watch 'tail -20 /var/www/itemp/logs/itemp.log'
+# screen -t otemp  5  watch 'tail -20 /var/www/otemp/logs/otemp.log'
+# screen -t itemp.data  4  watch 'echo $(date +%F);echo $(date +%s); tail -20 /var/www/itemp/itemp.data'
+# screen -t otemp.data  5  watch 'echo $(date +%F);echo $(date +%s); tail -20 /var/www/otemp/otemp.data'
+# screen -t itemp.log  6 watch "echo $(date +%F);echo $(date +%s); tail -20 /var/www/itemp/logs/itemp.log"
+# screen -t otemp.log 7 watch "echo $(date +%F);echo $(date +%s); tail -20 /var/www/otemp/logs/otemp.log"
+# screen -t temp.log 8 watch "echo $(date +%F);echo $(date +%s); tail -20 /var/www/temp.log"
+# screen 9 # 'gedit /var/www/bin/mtsp.sh &'
+# screen -t mail 8 pine
+# screen -t daemon 9 tail -f /var/log/daemon.log
+#
+# pflint 
