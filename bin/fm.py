@@ -24,7 +24,7 @@ from string import digits
 # global inf
 ver="0.20130403"
 # filename="furmon.data"
-filename="/home/flint/furmon/furmon.data"
+filename="/home/pellergy/src/furmon/furmon.data"
 #	
 def intro():
 	''' Prints the main story about this program and tries to warn you.'''
@@ -445,13 +445,16 @@ def Sfile():
 	 		b += 1
 #		
 def otrs():
-	print "Using serial data from %s at %s bits per second, with a %s second time out factor" \
-	% (options.serial_port, options.port_baud, options.timeout)
+	print "otrs begin"
+	print "Using serial data from %s at %s bits per second, with a %s second time out factor" % (options.serial_port, options.port_baud, options.timeout)
 	serp = Serial(port=options.serial_port, baudrate=options.port_baud, timeout=6)
 	print "Got past open. Press Ctrl+C to interrupt block read"
+	print serp
+	print "otrs end"
 	return serp
 #
 def rsdl(ser):
+	print "rsdl start"
 	''' read serial data Line '''
 	def signal_handler(signal, frame):
 	    print " - You pressed Ctrl+C! in block read"
@@ -461,14 +464,20 @@ def rsdl(ser):
 	# ser=""
 	# print 'Press Ctrl+C to interrupt block read'
 	while True:
+	 #d print "begin rsdl while"
 	 pac_start=time.time()
-	 if ser.inWaiting():
+	 #d print pac_start
+	 cread=ser.inWaiting()
+	 if cread:
+		
 		now=str(time.time())
-		dataline = ser.readline()
+		#d print now
+		dataline = ser.read(cread)
 		outline = dataline+"\xfeEpf Time: "+now
-		# print(outline)
+		print(outline)
 		# out.write(outline)
 		l=re.split("\xfeE", outline)
+		print "rsdl end"
 		return l
 #
 def dorserial():
@@ -494,15 +503,17 @@ def doserial():
 	''' load serial data into attributes '''
 	mser=otrs()
 	print 'Press Ctrl+C for interrupt'
-	print "you are in dofile routine about to read the file"
+	print "you are in doSerial routine about to read the Serial Porty"
 	status="undefined"
 	i = 0
-	#d while ( i < 8 ): # for run limit in debug mode...
+	#dwhile ( i < 8 ): # for run limit in debug mode...
  	while True:
 	 	i += 1 # count for run limit
+		print i
 		b = 1
 		dataline=rsdl(mser) # assumes open file with pointer to dline 
-		#d print dataline
+		#d 
+		print dataline
 		while ( b < len(dataline)):
 			os.system('clear')
 			if ( len(dataline[b]) < 50 ):  # sets allowable element length
