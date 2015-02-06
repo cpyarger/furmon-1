@@ -24,7 +24,7 @@ from string import digits
 # global inf
 ver="0.20130403"
 # filename="furmon.data"
-filename="/home/pellergy/src/furmon/furmon.data"
+filename="/tmp/furmon.data"
 #	
 def intro():
 	''' Prints the main story about this program and tries to warn you.'''
