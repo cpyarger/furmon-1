@@ -25,7 +25,7 @@ from string import digits
 ver="0.20130403"
 # filename="furmon.data"
 filename="/tmp/furmon.data"
-#	
+#
 def intro():
 	''' Prints the main story about this program and tries to warn you.'''
 	print '\t %s documentation: A tale of woe and intrigue' %  os.path.basename(__file__)
@@ -39,18 +39,18 @@ class furmon:
 	    def __init__(self):
 		self.thstcall="Call"
 		self.recno="#"
-		self.hours="Hours Used" 
+		self.hours="Hours Used"
 		self.tonoff="Off"
-		self.fsensor="00"      
-		self.fmotor="off" 
+		self.fsensor="00"
+		self.fmotor="off"
 		self.blowsp="00"
-		self.alarm="No Alarm"  
-		self.reason="All is well" 
+		self.alarm="No Alarm"
+		self.reason="All is well"
 		self.opstate="Operational State"
-		self.state_counter="0000"      
-		self.resets="0000"       
+		self.state_counter="0000"
+		self.resets="0000"
 		self.stack_temp="Flue Temp"
-		self.starts="000"       
+		self.starts="000"
 		self.system_temp="System Temp"
 		self.butn1="Param"
 		self.butn2="Test"
@@ -60,19 +60,19 @@ class furmon:
 # These are the basic methods
 	#d def expose(self):
 	# ''' prints all the attributes of this object '''
-	# note this is an example from 
+	# note this is an example from
 	# http://www.saltycrane.com/blog/2008/09/how-iterate-over-instance-objects-data-attributes-python/
-	#d for attr, value in a.__dict__.iteritems():  
+	#d for attr, value in a.__dict__.iteritems():
         #d     print attr, value
 
 #
 # exposes attributes and values in an object
 def expose(obj):
 	''' prints all the attributes of this object '''
-	# note this is based on an example from 
+	# note this is based on an example from
 	# http://www.saltycrane.com/blog/2008/09/how-iterate-over-instance-objects-data-attributes-python/
 	#d a=obj()
-	for attr, value in obj.__dict__.iteritems():  
+	for attr, value in obj.__dict__.iteritems():
 	  if len(attr) >=8:
             print '%s\t%s' % (attr, value)
 	  else:
@@ -83,7 +83,7 @@ def expose(obj):
 def alarm(L):
 	'''This determines if there is an alarm, this also reports the reason '''
 	alarm="No Alarm "
-	reason=" no reason "	
+	reason=" no reason "
 	target="\x00ALARM"
 	for item in L:
 		if item.find(target) != -1:
@@ -135,7 +135,7 @@ def cstate(input):
 		out.state_counter=state_counter
 		# print "got an object count ",out.state_counter
 	# return printme( temp )
-	return state_counter 
+	return state_counter
 
 #
 def systmp(input):
@@ -145,10 +145,10 @@ def systmp(input):
 	if ( str(''.join([c for c in input if input.startswith(target)]))[0:] ):  # if the element starts with the target
 		temperature = cleanv(input,target)
 		# print "got a good temp"
-	else: 
+	else:
 		temperature=out.system_temp
 	# return printme( temp )
-	return temperature 
+	return temperature
 #
 def stacktmp(input):
 	''' get system temprature '''
@@ -156,10 +156,10 @@ def stacktmp(input):
 	target="F"
 	if ( str(''.join([c for c in input if input.startswith(target)]))[0:] ):  # if the element starts with the target
 		temperature = cleanv(input,target)
-	else: 
+	else:
 		temperature=out.stack_temp
 	# return printme( temp )
-	return temperature 
+	return temperature
 #
 def flamesns(L):
 	''' Is the sensor sensing flame?'''
@@ -173,13 +173,13 @@ def ophours(input):
 	target="Hours"
 	s=re.sub(r'[^\w]', '',input)
 	# print s
-	# print string.find(s, target) 
+	# print string.find(s, target)
 	if (string.find(s, target) == 0):
 		# hours=(s[5:9])
 		hours=''.join(c for c in (s[5:9]) if c in digits)
 	if len(cleann(out.hours)) >= len(cleann(hours)) :
 		hours=out.hours
-		# hours=""	
+		# hours=""
 	# return printme( hours )
 	return cleann(hours)
 	# return hours
@@ -192,19 +192,19 @@ def opstate(input):
 	target="\x00"
 	# print input
 	# print s
-	# print string.find(s, target) 
+	# print string.find(s, target)
 	if (string.find(input, target) == 0):
 		# state=(s[0:])
 		state=re.sub(r'[^\w]', '',input[0:])
 		# state=''.join(c for c in (s[5:9]) if c in digits)
 	else:
-		state=out.opstate	
+		state=out.opstate
 	# return printme( state )
-	# print state 
+	# print state
 	x=0
-	statepairs = [ 	('IDL','idle') , 
-			('I','idle') , 
-			('IGN','igniting') , 
+	statepairs = [ 	('IDL','idle') ,
+			('I','idle') ,
+			('IGN','igniting') ,
 			('FEE','feedstart'),
 			('FIR','firing'),
 			('STA','stabilizing'),
@@ -232,7 +232,7 @@ def thstcall(input):
 		state=re.sub(r'[^\w]', '',input[0:])
 		# state=''.join(c for c in (s[5:9]) if c in digits)
 	else:
-		state=""	
+		state=""
 	return state[0:1]
 #
 def ignind(L):
@@ -289,7 +289,7 @@ def timest(L):
 	for item in L:
 		if item.find(target) != -1:
 		     # print len(item),"   ",(item[1:])
-		     # if 19 <= len(item)  < 22: 
+		     # if 19 <= len(item)  < 22:
 				# if item.find(type) != -1:
 				rawtime=float(item[9:]) # must be float to work in time machine
 				# print rawtime
@@ -340,13 +340,13 @@ def otrf():
 	''' open to read file'''
 	try:
 		inf = open(options.filename, "rb")
-	except IOError: 
+	except IOError:
 		print "The file '%s' does not exist, please correct and retry..." % options.filename
 		sys.exit()
 	print "you opened the file from otrf"
 	return inf
 	#
-# 
+#
 #
 def rfdl(dfile):
 	''' read data line'''
@@ -354,7 +354,7 @@ def rfdl(dfile):
 	line=re.split("\xfeE",dataline)
 	# print line
 	# out = open(options.filename,'a')
-	if dataline == '': 
+	if dataline == '':
 	 dataline = "EOF"
 	return line
 #
@@ -368,24 +368,24 @@ def dofile():
  	while True:
 	 	i += 1 # count for run limit
 		b = 1
-		dataline=rfdl(dline) # assumes open file with pointer to dline 
+		dataline=rfdl(dline) # assumes open file with pointer to dline
 		#d print dataline
 		while ( b < len(dataline)):
 			os.system('clear')
 			if ( len(dataline[b]) < 50 ):  # sets allowable element length
-				l=dataline[b] 
+				l=dataline[b]
 				out.system_temp = systmp(l)
 				# print systmp(l)
 				starts(l)
 				out.state_counter = cstate(l)
 				out.stack_temp = stacktmp(l)
 				out.hours = ophours(l)
-				out.opstate = opstate(l)					
-				out.thstcall = thstcall(l)					
-				resets(l)				
+				out.opstate = opstate(l)
+				out.thstcall = thstcall(l)
+				resets(l)
 				out.recno = i
-				# outfile1()				
-				# outfile()				
+				# outfile1()
+				# outfile()
 				print 'in line %d' % (b)
 				# expose(frfile) #really good object dumpter
 				# print "output of ",out
@@ -414,7 +414,7 @@ def tfile():
 		#d print dataline
 		while ( b < len(dataline)):
 			if ( len(dataline[b]) < 50 ):  # sets allowable element length
-				l=dataline[b] 
+				l=dataline[b]
 				cstate(l)
 	 		b += 1
 #
@@ -437,13 +437,13 @@ def Sfile():
 		#d print dataline
 		while ( b < len(dataline)):
 			if ( len(dataline[b]) < 50 ):  # sets allowable element length
-				l=dataline[b] 
+				l=dataline[b]
 			# print "record = %s entering opstate sub" % b
 			frfile.state=opstate(l)
 			if ( frfile.state != "" ):
-				print "leaving tfile record = %s current state = %s" % (b,frfile.state) 
+				print "leaving tfile record = %s current state = %s" % (b,frfile.state)
 	 		b += 1
-#		
+#
 def otrs():
 	print "otrs begin"
 	print "Using serial data from %s at %s bits per second, with a %s second time out factor" % (options.serial_port, options.port_baud, options.timeout)
@@ -469,7 +469,7 @@ def rsdl(ser):
 	 #d print pac_start
 	 cread=ser.inWaiting()
 	 if cread:
-		
+
 		now=str(time.time())
 		#d print now
 		dataline = ser.read(cread)
@@ -489,12 +489,12 @@ def dorserial():
 	 	i += 1
 		tada=rsdl(mser) # using rdsl with a pointer to otrs to read data into tada
 		if (len(tada) > 30):
-			print tada 
+			print tada
 			# dfout(tada)
 			# print(systmp(tada))
 			# print(timest(tada))
 		else:
-			# print len(tada) 
+			# print len(tada)
 			'Block %d is and underrun with only %d elements. Press Ctrl+C to interrupt ' % (i,len(tada) )
 		print 'At %s Block %d is %d elements long. Press Ctrl+C to interrupt ' % (timest(tada),i,len(tada) )
 #
@@ -506,29 +506,29 @@ def doserial():
 	print "you are in doSerial routine about to read the Serial Porty"
 	status="undefined"
 	i = 0
-	#dwhile ( i < 8 ): # for run limit in debug mode...
- 	while True:
+	while ( i < 20 ): # for run limit in debug mode...
+ 	#while True:
 	 	i += 1 # count for run limit
-		print i
+		print "Read # ",i
 		b = 1
-		dataline=rsdl(mser) # assumes open file with pointer to dline 
-		#d 
+		dataline=rsdl(mser) # assumes open file with pointer to dline
+		#d
 		print dataline
 		while ( b < len(dataline)):
 			os.system('clear')
 			if ( len(dataline[b]) < 50 ):  # sets allowable element length
-				l=dataline[b] 
+				l=dataline[b]
 				serial.system_temp = systmp(l)
 				# print systmp(l)
 				starts(l)
 				serial.stack_temp = stacktmp(l)
 				serial.hours = ophours(l)
-				serial.opstate = opstate(l)					
-				serial.thstcall = thstcall(l)					
-				resets(l)				
+				serial.opstate = opstate(l)
+				serial.thstcall = thstcall(l)
+				resets(l)
 				serial.recno = i
-				# outfile1()				
-				# outfile()				
+				# outfile1()
+				# outfile()
 				print 'in line %d' % (b)
 				# expose(frfile) #really good object dumpter
 				# dfout()
@@ -541,14 +541,18 @@ def doserial():
 	 	i += 1
 		tada=rsdl(mser) # using rdsl with a pointer to otrs to read data into tada
 		if (len(tada) > 30):
-			print tada 
+			print tada
 			# dfout(tada)
 			# print(systmp(tada))
 			# print(timest(tada))
 		else:
-			# print len(tada) 
+			# print len(tada)
 			'Block %d is and underrun with only %d elements. Press Ctrl+C to interrupt ' % (i,len(tada) )
 		print 'At %s Block %d is %d elements long. Press Ctrl+C to interrupt ' % (timest(tada),i,len(tada) )
+		#d print furmon
+
+
+
 #
 #
 def dcycle():
@@ -565,14 +569,36 @@ def serdis():
 	# output of objects test point
 	# print serial.alarm.__doc__ ," The value is",(serial.alarm())
 	# print serial.state.__doc__ ," The value is",(serial.state())
-	print(serial.alarm())
-	print(serial.state())
-	print(serial.ophours())
-	print(serial.resets())
-	print(serial.starts())
-	print(serial.systmp())
-	print(serial.stacktmp())
-	print(serial.thstcall())
+	#print serial.alarm()
+	#print serial.state()
+	#print serial.ophours()
+	#print serial.resets()
+	#print serial.starts()
+	#print serial.systmp()
+	#print serial.stacktmp()
+	#print serial.thstcall()
+	print "\"furmon\" : \" {"
+	print "\"out.thstcall\" : \"" , out.thstcall, "\","
+	print "\"out.recno\" : \"" , out.recno, "\","
+	print "\"out.hours\" : \"" , out.hours, "\","
+	print "\"out.tonoff\" : \"" , out.tonoff, "\","
+	print "\"out.fsensor\" : \"" , out.fsensor, "\","
+	print "\"out.blowsp\" : \"" , out.blowsp, "\","
+	print "\"out.fmotor\" : \"" , out.fmotor, "\","
+	print "\"out.alarm\" : \"" , out.alarm, "\","
+	print "\"out.reason\" : \"" , out.reason, "\","
+  	print "\"out.state_counter\" : \"" , out.state_counter, "\","
+  	print "\"out.opstate\" : \"" , out.opstate, "\","
+  	print "\"out.resets\" : \"" , out.resets, "\","
+  	print "\"out.stack_temp\" : \"" , out.stack_temp, "\","
+  	print "\"out.starts\" : \"" , out.starts, "\","
+  	print "\"out.system_temp\" : \"" , out.system_temp, "\","
+  	print "\"out.butn1\" : \"" , out.butn1, "\","
+  	print "\"out.butn2\" : \"" , out.butn2, "\","
+  	print "\"out.butn3\" : \"" , out.butn3, "\","
+  	print "\"out.butn4\" : \"" , out.butn4, "\","
+	print "}"
+
 	# print serial.thstcall.__doc__ ," The value is",(serial.thstcall())
 	# print serial.ignind.__doc__ ," The value is",(serial.ignind()) # currently dumps L
 	print "tada display"
@@ -617,9 +643,9 @@ def dfdisk(fname):
 #
 #
 def dfscript(sfile):
-	''' 
+	'''
 	display selected object instances on one line based file output which must look like this:
-	bin/outpcp8.sh opstate:Status=Running state_counter:countdown=100 Call:Call=T 
+	bin/outpcp8.sh opstate:Status=Running state_counter:countdown=100 Call:Call=T
 	Resets:Resets=120 stack_temp:Stack=345 system_temp:System=330 Blower:Blower=10
 	All on one line...
 	'''
@@ -629,7 +655,7 @@ def dfscript(sfile):
 	print "putting script into",sfile
 	# f = open('test.sh','w')
 	# f.writelines ('%s\t%s\t%s\t%s\t%s\t%s\t%s\n' % (out.alarm,
-	f.writelines ('bin/outpcp.sh opstate:Status=%s Resets:Resets=%s stack_temp:System=%s stack_temp:Stack=%s state_counter:countdown=%s Call:Call=%s\n' 
+	f.writelines ('bin/outpcp.sh opstate:Status=%s Resets:Resets=%s stack_temp:System=%s stack_temp:Stack=%s state_counter:countdown=%s Call:Call=%s\n'
 	# f.writelines ('%s\t%s\t%s\t%s\t%s\t%s\t%s\n'
 	#					     % (out.alarm,
 						     % (
@@ -664,7 +690,7 @@ def dffile():
 #
 
 def main():
-	''' 
+	'''
 	This is the main subroutine, any detail about this program belongs here.
 	This program has two basic parts:
 	1. data gathering from at pellergy furnace with a furmon installed and
@@ -704,10 +730,10 @@ else:
 #
 # Evaluates inbound arguments
 	options, arguments = parser.parse_args()	# evaluate options
-	if options.bool: 
+	if options.bool:
 		print len(sys.argv)
 		intro()
-		sys.exit()	
+		sys.exit()
 	elif options.serialp:
 		print "You are at the serial routine"
 		serial = furmon() # instantiate the furmon class to serial
@@ -715,9 +741,11 @@ else:
 		# mser=otrs()
 		# print mser.__doc__rsdl(mser)
 		# print dir(mser)
-		#d print rsdl(mser) 
+		#d print rsdl(mser)
 		doserial()
-		sys.exit()	
+		#dfout() #works
+		serdis() #works better
+		sys.exit()
 	elif options.filename != "USB":
 		print "You are at file routines"
 		dline=otrf() # open file
@@ -739,23 +767,22 @@ else:
 		# tfile() # test individual object elements
 		# expose(furmon)
 		# expose(frfile)
-		sys.exit()	
+		sys.exit()
 	elif options.serial_port != "/dev/ttyUSB0":
 		print "You are at port selection"
 		sys.exit()
 	elif options.port_baud != "9600":
 		print "You are at port selection"
-		sys.exit()	
+		sys.exit()
 	elif options.timeout != "6":
 		print "You are at timeout selection"
-		sys.exit()	
+		sys.exit()
 # More junk
 	# print 'file name %s' % options.filename
 	# print 'Hello %s' % options.person
 
 
 if __name__ == '__main__':
+
 	main()
 	print "that's it"
-
-
